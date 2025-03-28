@@ -39,9 +39,16 @@ def bubble_sort(list): # we're getting better
                 swapped = True
 
 
-def merge(list1, list2):
-    list1 = []
-    list2 = []
+
+def merge(list):
+
+    if len(list) <= 1: return list
+    l_half = list 
+    r_half = []
+    l_half = merge(l_half)
+    r_half = merge(r_half)
+
+    merged_list = merge()
     
 
 swapped = True
